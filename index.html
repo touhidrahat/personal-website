@@ -22,10 +22,10 @@
         </ul>
     </nav>
 
-    <!-- Home Section -->
+    <!-- Hero Section -->
     <section id="home">
         <h1>Welcome to My Personal Website</h1>
-        <p>Introduction about who you are and a quick summary of what you do.</p>
+        <p>Explore my journey, skills, and connect with me</p>
     </section>
 
     <!-- Who I Am Section -->
@@ -61,7 +61,14 @@
     <!-- Portfolio Section -->
     <section id="portfolio">
         <h2>Portfolio</h2>
-        <p>Links to your work or showcase of projects you've worked on.</p>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300" alt="Project 1">
+                <h3>Project Title</h3>
+                <p>Description of the project.</p>
+            </div>
+            <!-- Add more portfolio items here -->
+        </div>
     </section>
 
     <!-- Blog Section -->
@@ -84,7 +91,18 @@
         </form>
     </section>
 
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
     <script src="scripts.js"></script>
 </body>
 </html>
-
