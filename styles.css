@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f7fb;
-    color: #333;
+    background: linear-gradient(135deg, #000000, #434343);
+    color: white;
 }
 
 /* Navbar */
 nav {
-    background: linear-gradient(45deg, #4e73df, #1cc88a);
+    background: linear-gradient(45deg, #1cc88a, #4e73df);
     padding: 15px 0;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
@@ -79,7 +79,57 @@ section p {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #555;
+    color: #ddd;
+}
+
+section img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Portfolio Section */
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 30%;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.portfolio-item h3 {
+    color: #333;
+    margin-top: 15px;
+}
+
+/* Blog Section */
+.blog-post {
+    background-color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.blog-post h3 {
+    color: #4e73df;
+}
+
+.blog-post p {
+    color: #ddd;
 }
 
 /* Contact Form Styling */
@@ -107,7 +157,7 @@ form input, form textarea {
 }
 
 form button {
-    background-color: #4e73df;
+    background-color: #1cc88a;
     color: white;
     padding: 12px;
     border: none;
@@ -117,46 +167,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #1cc88a;
-}
-
-/* Footer */
-footer {
     background-color: #4e73df;
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-}
-
-footer p {
-    font-size: 1em;
-}
-
-/* Portfolio Section */
-.portfolio-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.portfolio-item {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    width: 30%;
-    margin: 15px 0;
-    text-align: center;
-}
-
-.portfolio-item img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-.portfolio-item h3 {
-    color: #333;
-    margin-top: 15px;
 }
 
 /* Responsive Design */
