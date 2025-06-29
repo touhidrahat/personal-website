@@ -131,3 +131,43 @@ footer {
 footer p {
     font-size: 1em;
 }
+
+/* Portfolio Section */
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 30%;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.portfolio-item h3 {
+    color: #333;
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .portfolio-container {
+        flex-direction: column;
+    }
+    .portfolio-item {
+        width: 100%;
+    }
+}
